@@ -1,0 +1,9 @@
+{
+  "name": "timerApp",
+  "app_id": "da1fd083",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": []
+}

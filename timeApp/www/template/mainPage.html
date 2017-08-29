@@ -1,0 +1,30 @@
+<ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Timer</h1>
+      </ion-header-bar>
+      <ion-content>
+      <div id="bigCircle">
+        <div class="progress-wrapper">
+            <div class="progress ng-cloak" ng-style="getStyle()">{{ myTimer.value }}sec</div>
+            <round-progress max="myTimerFixed" current="myTimer.value" color="red" bgcolor="#eaeaea" semi="isSemi" rounded="rounded" stroke="20" clockwise="clockwise" responsive="true" duration="500" animation-delay="0" offset="0">
+                <svg>
+                    <lineargradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="5%" stop-color="green"/>
+                        <stop offset="95%" stop-color="gold"/>
+                    </lineargradient>
+                </svg>
+            </round-progress>
+          </div>
+        </div>
+        <div id="inputArea">
+          <label class="item item-input">
+            <span class="input-label">Start from: </span>
+            <input type="number" min="0" ng-model="myTimer.value" ng-change="myTimerFixed=myTimer.value">
+          </label>
+        </div>
+        <div id="btns">
+          <button class="button button-balanced" ng-click="start()" ng-disabled="myTimer.startBtn">Start  </button>
+          <button class="button button-assertive" ng-click="stop()" ng-disabled="myTimer.stopBtn">Stop </button>
+        </div>
+      </ion-content>
+    </ion-pane>

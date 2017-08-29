@@ -1,0 +1,38 @@
+/* Empty. Add your own CSS if you like */
+#bigCircle {
+	width:60%;
+	margin: 0 auto;
+}
+.progress {
+    position: absolute;
+    color: #bbb;
+    font-weight: 40;
+    line-height: 1;
+
+}
+.progress-wrapper {
+	position: relative;
+}
+#btns {
+	width: 100%;
+	padding: 0 30px
+}
+#btns button:first-child {
+	float: left;
+	width: 30%;
+}
+#btns button:last-child {
+	float: right;
+	width: 30%;
+}
+#btns:after {
+	clear:both;
+	display: block;
+	content: '';
+
+}
+
+#inputArea {
+	margin-bottom: 20px;
+    margin-top: 20px;
+}
